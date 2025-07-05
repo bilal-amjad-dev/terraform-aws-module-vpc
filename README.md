@@ -37,6 +37,12 @@ terraform-aws-module-vpc/
   - 💡 **Tip to remember:** **R** for **Right side** = **R** for **Root variable** 😁
 
 - The `terraform.tfvars` file is used to **initialize (assign values to) the variables** declared in the root's `variables.tf`.
+- Values flow like this:
+```bash
+terraform.tfvars → root variables.tf → module block (main.tf) → module variables.tf → resources
+```
+
+
 
 ---
 
@@ -94,8 +100,5 @@ Example:
 0.0.0.0/0 → Internet Gateway
 
 
-- Values flow like this:
-```bash
-terraform.tfvars → root variables.tf → module block (main.tf) → module variables.tf → resources
-```
+
 
