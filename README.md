@@ -20,8 +20,7 @@ terraform-aws-module-vpc/
 └── modules/
     └── vpc/
         ├── vpc.tf
-        ├── variables.tf
-        └── outputs.tf
+        └── variables.tf
 ```
 ---
 
