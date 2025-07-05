@@ -96,9 +96,9 @@ Each region (e.g., `ap-south-1`) has multiple AZs (e.g., `ap-south-1a`, `ap-sout
 A **Route Table** contains a set of **routing rules** used to determine where network traffic is directed.
 
 Example:
-```hcl
+```bash
 0.0.0.0/0 → Internet Gateway
-
+```
 
 
 
