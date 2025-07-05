@@ -81,6 +81,18 @@ A **Private Subnet**:
 
 ---
 
+### 🌐 What is an Internet Gateway (IGW)?
+An **Internet Gateway** is a **VPC component** that allows communication **between your VPC and the internet**.
+
+- It is attached to the VPC.
+- Works together with **route tables** to enable internet access.
+- Required for any public subnet.
+
+✅ Required for:
+- Internet access from EC2 instances in public subnets
+
+---
+
 ### 📍 What is an AZ (Availability Zone)?
 **AZ (Availability Zone)** is a **physical data center** in an AWS Region.  
 Each region (e.g., `ap-south-1`) has multiple AZs (e.g., `ap-south-1a`, `ap-south-1b`, etc.).
@@ -96,9 +108,5 @@ Each region (e.g., `ap-south-1`) has multiple AZs (e.g., `ap-south-1a`, `ap-sout
 A **Route Table** contains a set of **routing rules** used to determine where network traffic is directed.
 
 Example:
-```bash
+```hcl
 0.0.0.0/0 → Internet Gateway
-```
-
-
-
